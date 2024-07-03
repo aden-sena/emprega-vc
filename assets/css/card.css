@@ -1,0 +1,19 @@
+/**
+    CSS para a página recrutamento_e_selecao.html
+    Ajusta os itens e adiciona animação
+**/
+.card {
+    width: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_card {
+    width: 150px;
+    transition: 0.3s;
+}
+
+.logo_card:hover, #wpp:hover {
+    scale: 1.2;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Certa - Emprega VC</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/vc_logo.png">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div id="topo">
+        <img src="assets/img/Logo-Azul-2.png" alt="Logo Via Certa Azul">
+
+        <!-- Só será exibido quando atingir a condição presente no arquivo menu.js -->
+        <button id="menu-icon">
+            <!-- icone do menu mobile -->
+        </button>
+
+        <!-- css do menu está no global.css pois aparece em todas as páginas -->
+        <nav id="menu">
+            <ul>
+                <a href="index.html"><li id="marcado">Início</li></a>
+                <a href="formulario.html"><li>Formulário</li></a>
+                <a href="curriculo.html"><li>Currículo</li></a>
+                <a href="recrutamento_e_selecao.html"><li>Recrutamento e Seleção</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <article>
+        <img src="assets/img/imagem_emprega_VC.png" width="100%">
+
+        <p>Olá Aluno(a),</p>
+
+        <p>Nós, da <b>Escola Via Certa Maracanaú</b>, iremos auxiliar você a se inserir no mercado de trabalho por meio do programa <b>Emprega VC</b>. Este programa de orientação profissional e desenvolvimento de carreira visa encaminhá-lo(a) para o mundo do trabalho, fornecendo suporte em diversas etapas do processo.</p>
+
+        <div id="evco">
+            <p>
+                <b><img src="assets/img/vc_logo.png"> O Emprega VC oferece:</b>
+                <ol>
+                    <li onclick="verificarLista('l1', 0)">
+                        1. Entrevista Simulada com Orientadora de Carreira e Profissão 
+                        <span class="iconList"></span>
+                    </li>
+                    <ul id="l1">
+                        <li>Realizamos simulações de entrevistas com uma orientadora de carreira experiente.</li>
+                    </ul>
+    
+                    <li onclick="verificarLista('l2', 1)">
+                        2. Orientação na Elaboração de Currículo
+                        <span class="iconList"></span>
+                    </li>
+                    <ul id="l2">
+                        <li>Realização de análise curricular por nossa orientadora analisando pontos fortes e fracos na sua jornada profissional.</li>
+                        <li>Ajudamos na criação de currículos, oferecendo modelos e orientações detalhadas.</li>
+                    </ul>
+    
+                    <li onclick="verificarLista('l3', 2)">
+                        3. Cadastro em Plataformas Indicadas
+                        <span class="iconList"></span>
+                    </li>
+                        <ul id="l3">
+                            <li>Orientamos você no processo de cadastro em plataformas de estágio, jovem aprendiz e emprego.</li>
+                            <li>É fundamental ter atenção ao inserir seus dados para garantir que seu perfil esteja completo e atraente para as empresas recrutadoras.</li>
+                        </ul>
+                    
+                    <li onclick="verificarLista('l4', 3)">
+                        4. Divulgação de Oportunidades e Encaminhamento
+                        <span class="iconList"></span>
+                    </li>
+                        <ul id="l4">
+                            <li>Mantemos você informado sobre diversas oportunidades de emprego.</li>
+                            <li>Facilitamos o encaminhamento para entrevistas e processos seletivos, aumentando suas chances de inserção no mercado de trabalho.</li>
+                        </ul>
+                </ol>
+            </p>
+        </div>
+
+        <p>Estamos comprometidos em fornecer o suporte necessário para que você alcance seus objetivos profissionais. Participe do projeto Emprega VC e dê um passo importante rumo à sua carreira!</p>
+
+        <p>Bem-vindos ao Emprega VC!!!</p>
+
+        <p id="assinatura">Rose Nunes <span>Diretora Pedagógica Via Certa</span></p>
+    </article>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/lista.js"></script>
+</body>
+</html>

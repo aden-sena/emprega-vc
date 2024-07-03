@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Certa - Emprega VC</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/vc_logo.png">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/curriculo.css">
+</head>
+<body>
+    <div id="topo">
+        <img src="assets/img/Logo-Azul-2.png" alt="Logo Via Certa Azul">
+
+        <!-- Só será exibido quando atingir a condição presente no arquivo menu.js -->
+        <button id="menu-icon">
+            <!-- icone para menu mobile -->
+        </button>
+
+        <!-- css do menu está no global.css pois aparece em todas as páginas -->
+        <nav id="menu">
+            <ul>
+                <a href="index.html"><li>Início</li></a>
+                <a href="formulario.html"><li>Formulário</li></a>
+                <a href="curriculo.html"><li id="marcado">Currículo</li></a>
+                <a href="recrutamento_e_selecao.html"><li>Recrutamento e Seleção</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <article>
+        <img src="assets/img/curriculo.png">
+
+        <h1>ELABORAÇÃO DE CURRÍCULOS</h1>
+        <p>A elaboração do currículo é uma das etapas mais importantes na <b>busca por oportunidades de emprego</b>, afinal, ele é o seu <b>primeiro contato</b> com a pessoa recrutadora! <b>É seu cartão de visita!</b></p>
+        
+        <p>O grande objetivo do currículo é fazer com que você seja chamado para <b>uma entrevista</b>. Portanto, saber o que escrever e como mostrar suas vivências é essencial para que você consiga esse objetivo.</p>
+
+        <h2>Dicas Gerais na elaboração de currículos</h2>
+        <span id="infoDicas">Clique nos ícones para ver as dicas</span>
+        <p>
+            <ul id="icones">
+                    <li onclick="exibirInfo(0)"><img class="icones" src="assets/img/icones-curriculo/objetivo.png"></li>
+    
+                    <li onclick="exibirInfo(1)"><img class="icones" src="assets/img/icones-curriculo/curricullo.png"></li>
+                    
+                    <li onclick="exibirInfo(2)"><img class="icones" src="assets/img/icones-curriculo/contato.png"></li>
+    
+                    <li onclick="exibirInfo(3)"><img class="icones" src="assets/img/icones-curriculo/formato.png"></li>
+    
+                    <li onclick="exibirInfo(4)"><img class="icones" src="assets/img/icones-curriculo/ortografia.png"></li>
+    
+                    <li onclick="exibirInfo(5)"><img class="icones" src="assets/img/icones-curriculo/consistencia.png"></li>
+    
+                    <li onclick="exibirInfo(6)"><img class="icones" src="assets/img/icones-curriculo/foto.png"></li>
+    
+                    <li onclick="exibirInfo(7)"><img class="icones" src="assets/img/icones-curriculo/pdf.png"></li>
+    
+                    <li onclick="exibirInfo(8)"><img class="icones" src="assets/img/icones-curriculo/email.png"></li>
+            </ul>
+        </p>
+
+        <!-- Define a área onde será exibido as informações do currículo -->
+        <div id="painel">
+            <div id="fechar" onclick="desligarPainel()">
+                <!-- Ícone de fechar -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#2b3185"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            
+
+            <div id="info">
+                <!-- Aqui é exibido as informações dos icones -->
+            </div>
+        </div>
+
+        <span id="tmodelo">AGORA VOCÊ ESTÁ PRONTO PARA ELABORAR SEU CURRÍCULO... VEJA A SEGUIR OS MODELOS SUGERIDOS. <br> BOA SORTE!</span>
+
+        <h2>A Via Certa disponibiliza dois modelos de currículo para você escolher:</h2>
+
+        <span class="modelos"><b>MODELO 1:</b> Criamos um arquivo no word para você preencher todas as informações solicitadas e construir seu currículo. Leia com cuidado, veja também as observações que estão em grifo vermelho. Revise tudo que foi escrito e seu currículo estará pronto para envio.</span>
+
+        <div id="download">
+            <a href="assets/curriculo/Modelo de Currículo (Via Certa).doc">
+                <img src="assets/img/icones/word.jfif">
+    
+                <span>Modelo de currículo</span>
+    
+                <!-- Ícone do download -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+            </a>
+        </div>
+
+        <div id="upload">
+            <a href="https://forms.gle/4ArZvULebvjisYqo9" target="_blank">
+                <span>Enviar currículo para análise</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#5f6368"><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+            </a>
+        </div>
+
+        <span class="modelos"><b>MODELO 2:</b> modelo recomendado pelo CIEE (Centro de Integração Escola). O CIEE tem mais de 60 anos de história no Brasil e é uma das principais organizações responsável pela inserção de jovens no mundo do trabalho.</span>
+
+        <a href="https://portal.ciee.org.br/quero-me-preparar/faca-seu-curriculo/" target="_blank" id="ciee">Clique aqui para acessar o modelo</a>
+    </article>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/curriculo.js"></script>
+</body>
+</html>

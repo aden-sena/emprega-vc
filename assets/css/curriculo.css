@@ -1,0 +1,222 @@
+article {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+article > p {
+    text-align: justify;
+    font-weight: 500;
+
+    margin: 1rem 17.5% 0 17.5%;
+}
+
+#infoDicas {
+    text-align: center;
+    font-weight: 500;
+    color: dimgray;
+    margin: .5rem 0;
+}
+
+
+/*
+    Local destinado para os ícones de informações do currículo e também do painel de exibição.
+*/
+#icones {
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#icones > li > img {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    border-top: 3px solid rgb(146, 255, 112);
+    border-right: 3px solid rgb(139, 139, 241);
+    border-bottom: 3px solid rgb(139, 139, 241);
+    border-left:  3px solid rgb(146, 255, 112);
+    border-radius: 50%;
+}
+
+#icones > li > img:hover {
+    scale: 1.25;
+    box-shadow: -2px -2px 5px rgb(146, 255, 112), 
+                2px 2px 5px rgb(139, 139, 241);
+}
+
+.iconeAtivo {
+    scale: 1.25;
+    box-shadow: -2px -2px 5px rgb(146, 255, 112), 
+                2px 2px 5px rgb(139, 139, 241);
+}
+
+#emailEnviado {
+    width: 50px;
+    margin-top: 2rem;
+
+    border-top: 3px solid rgb(146, 255, 112);
+    border-right: 3px solid rgb(139, 139, 241);
+    border-bottom: 3px solid rgb(139, 139, 241);
+    border-left:  3px solid rgb(146, 255, 112);
+    border-radius: 50%;
+}
+
+#painel {
+    width: 65%;
+    text-align: center;
+
+    margin: 1rem 17.5% 0 17.5%;
+    padding: .5rem 1rem 2rem 1rem;
+
+    border-top: 1px solid rgb(146, 255, 112);
+    border-right: 1px solid rgb(139, 139, 241);
+    border-bottom: 1px solid rgb(139, 139, 241);
+    border-left:  1px solid rgb(146, 255, 112);
+    border-radius: 10px;
+
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
+}
+
+#fechar {
+    width: 30px;
+    cursor: pointer;
+}
+
+#painel > #info > h3 {
+    margin-bottom: .5rem;
+}
+/* Fim do espaço destinado aos ícones de informações do currículo e também do painel de exibição */
+
+
+#tmodelo {
+    font-weight: bold;
+    color: dimgray;
+    border-left: 2px solid lightgray;
+
+    margin: 1rem 17.5% 0 17.5%;
+    padding-left: .5rem;
+}
+
+#download, #upload {
+    width: 99%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem 0;
+}
+
+#download > a, #upload > a {
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
+
+    text-decoration: none;
+}
+
+#download > a > img {
+    width: 40px;
+    margin-left: 1rem;
+}
+
+#download > a > span, #upload > a > span {
+    margin-left: .5rem;
+    margin-right: 40%;
+    
+    color: black;
+}
+
+#upload > a {
+    height: 40px;
+}
+
+.modelos {
+    margin: 1rem 17.5% 0 17.5%;
+}
+
+#ciee {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #download, #upload {
+        margin-bottom: 2.5rem;
+    }
+
+    #download > a, #upload > a {
+        width: 40%;
+    }
+
+    article > p {
+        margin: 0 10%;
+    }
+
+    h1, h2 {
+        margin-bottom: 1rem;
+    }
+
+    ul > li {
+        margin: 0 10%;
+    }
+
+    .modelos {
+        margin: 0rem 10%;
+    }
+
+    #painel {
+        width: 72%;
+        margin-left: 10%;
+    }
+
+    #tmodelo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #icones {
+        width: 98%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: .5rem;
+    }
+
+    #icones > li > img {
+        width: 60px;
+    }
+
+    .icones {
+        margin: 1rem 0 1rem 40%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #download > a, #upload > a {
+        width: 80%;
+    }
+
+    #download > a > span, #upload > a > span {
+        margin-right: 25%;
+    }
+
+    .icones {
+        margin: 1rem 0 1rem 20%
+    }
+}

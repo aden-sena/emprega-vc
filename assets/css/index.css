@@ -1,0 +1,107 @@
+article {
+    width: 100%;
+    height: 88vh;
+    overflow: auto;
+}
+
+p {
+    text-align: justify;
+    font-weight: 500;
+    margin: 1rem 17.5% 0 17.5%;
+}
+
+
+/**
+    evco - Emprega VC Oferece
+    Card com a lista de informações do emprega VC
+**/
+#evco {
+    width: 65%;
+    margin: 2rem 0 2rem 17.5%;
+
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
+                
+    border-top: 1px solid rgb(146, 255, 112);
+    border-right: 1px solid rgb(139, 139, 241);
+    border-bottom: 1px solid rgb(139, 139, 241);
+    border-left:  1px solid rgb(146, 255, 112);
+    border-radius: 10px;
+
+    background-color: rgba(128, 128, 128, .1);
+}
+
+#evco > p {
+    margin: 1rem 3% 2rem 3%;
+    border-radius: 5px;
+}
+
+#evco > p > b{
+    display: flex;
+    align-items: center;
+    font-size: 15pt;
+
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+}
+
+#evco > p > b > img {
+    width: 30px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/** Fim do evco **/
+
+
+ol > li {
+    display: flex;
+    font-weight: bold;
+    margin: 1.5rem 0 0 3.2%;
+    cursor: pointer;
+}
+
+ul > li {
+    list-style: none;
+    margin: .5rem 5% 0 5%;
+    padding-left: .5rem;
+    font-weight: 500;
+    border-left: 2px solid rgb(114, 209, 18);
+}
+
+
+/** Deixa as sublistas invisíveis. **/
+#l1, #l2, #l3, #l4 {
+    display: none;
+}
+
+#assinatura {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #evco {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #evco > p > b{
+        flex-direction: column;
+    }
+    
+    ol > li {
+        margin-left: 9%;
+        margin-right: 9%;
+        align-items: center;
+    }
+
+    p {
+        margin: 1rem 10% 0 10%;
+    }
+    
+    ul > li {
+        margin-left: 9%;
+    }
+}

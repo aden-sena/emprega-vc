@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI';
+}
+
+#topo {
+    width: 100%;
+    height: 12vh;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(114, 209, 18);
+}
+#topo > img {
+    width: 200px;
+    margin-top: .3rem;
+    margin-left: 1rem;
+}
+
+
+/**
+    Espaço destinado ao menu
+**/
+
+/** Adiciona a bordar embaixo do item do menu que está selecionado **/
+#marcado {
+    border-bottom: 3px solid rgb(43, 49, 133);
+    font-weight: 600;
+}
+
+#menu-icon {
+    position: absolute;
+    margin-top: 7vh;
+    background-color: rgb(114, 209, 18);
+    border: none;
+}
+
+#menu {
+    width: 100%;
+    position: absolute;
+}
+
+#menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu > ul > a {
+    text-decoration: none;
+}
+
+#menu > ul > a > li {
+    display: flex;
+    align-items: end;
+    list-style: none;
+    height: 12vh;
+    padding: 0 2rem;
+
+    color: rgb(43, 49, 133);
+}
+
+/**
+    Fim do espaço do menu
+**/
+
+
+@media screen and (max-width: 700px) {
+    #topo {
+        justify-content: center;
+        align-items: baseline;
+    }
+    #topo > img {
+        width: 180px;
+        margin-left: 0;
+    }
+
+    /**
+        Responsividade do menu
+    **/
+    #menu {
+        margin-top: 10vh;
+    }
+    #menu > ul {
+        flex-direction: column;
+        align-items: center;
+
+        background-color: rgb(114, 209, 18);
+        padding-bottom: 1rem;
+    }
+
+    #menu > ul > a > li {
+        height: 5vh;
+    }
+}
